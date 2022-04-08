@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+<style>
+    @font-face {
+        font-family: 'Far From Homecoming';
+        src: url('./Assets/fonts/Typo-FarFromHomecoming.woff2') format(woff2);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    header {
+        background: #B11313;
+        Padding: 1%;
+        margin: 0 !important;
+    }
+    
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    a:hover {
+        color: #FFFFFF;
+    }
+    
+    .mobile {
+        background: #B11313;
+        padding: 10px 0;
+    }
+    
+    .araigné {
+        background: #F1C530;
+    }
+    
+    .spider {
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 0 10%;
+    }
+    
+    h1 {
+        font-family: 'Far From Homecoming';
+        padding-top: 65%;
+        font-weight: bold;
+        font-size: 60px;
+    }
+    
+    .dessin>p {
+        padding-top: 5%;
+        margin-left: 7%;
+        font-size: 20px;
+    }
+    
+    .name {
+        background: #B11313;
+    }
+    
+    .nom {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    h2 {
+        font-family: 'Far From Homecoming';
+        margin-left: 10%;
+        padding-top: 10%;
+        color: #FFFFFF;
+    }
+    
+    .page {
+        color: #FFFFFF;
+        margin-left: 10%;
+        font-size: small;
+    }
+    
+    .image {
+        transform: scaleX(-1);
+    }
+    
+    input {
+        border-radius: 25Px;
+        background: #B11313;
+        border: 1px solid #FFFFFF;
+        width: 250px;
+        font-size: x-small;
+    }
+    
+     ::placeholder {
+        color: #FFFFFF;
+    }
+    
+    .sms {
+        height: 100px;
+        padding-bottom: 15%;
+    }
+    
+    button {
+        border: #FFFFFF;
+        border-radius: 25px;
+        font-weight: bold;
+    }
+    
+    .jeux {
+        background: #114C92;
+        color: #FFFFFF;
+        font-size: x-small;
+    }
+    
+    .lettre {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    
+    .cadre a {
+        border-radius: 7px;
+        font-size: small;
+    }
+    
+    footer {
+        background: #000000;
+        font-size: x-small;
+    }
+    
+    .foot {
+        margin-left: 7%;
+    }
+    
+    .pied {
+        margin-left: 20%;
+    }
+    
+    .teta {
+        margin-bottom: -2%;
+    }
+    
+    select {
+        background-color: #B11313;
+        border-radius: 25px;
+        width: 105Px;
+        color: white;
+        padding: 2px;
+        border: #B11313;
+        font-weight: bold;
+    }
+    
+    .gama {
+        background: #B11313;
+        border-radius: 50%;
+        padding: 4Px;
+    }
+    
+    .alfa {
+        word-spacing: 10px;
+    }
+</style>
+
+<body>
+
+    <header class="row d-none d-md-flex">
+        <div class="col-md-3 offset-1">
+            <a href=""> <img class="img-fluid" src="./Assets/Logo/logo1.png" alt="" style="width: 9%">
+                <img class="mx-3 img-fluid" src="./Assets/Logo/logo2.png" alt="" style="width: 5%">
+                <img class="img-fluid" src="./Assets/Logo/logo3.png" style="width: 30%"></a>
+        </div>
+
+
+        <div class="d-flex col-md-7 offset-1 row">
+            <div class="col"><a href="w-Home.html">Accueil</a></div>
+            <div class="col mx-4"><a href="">Adversaires</a></div>
+            <div class="col"><a href="w-Héro.html">Héros</a></div>
+            <div class="col"><a href="w-À propos.html">À propos</a></div>
+        </div>
+
+    </header>
+    <div class="d-flex d-md-none d-xl-none d-xxl-none justify-content-between align-items-center mobile">
+
+        <div class="colonne ms-5">
+
+            <a href=""> <img class="img-fluid" src="./Assets/Logo/logo1.png" alt="" style="width: 12%">
+                <img class="mx-3 img-fluid" src="./Assets/Logo/logo2.png" alt="" style="width: 7%">
+                <img class="img-fluid" src="./Assets/Logo/logo3.png" style="width: 45%"></a>
+        </div>
+        <div class="colonne me-5">
+
+            <a href=""><i class="text-white fa-solid fa-ellipsis fa-2x"></i></a>
+
+
+        </div>
+    </div>
+    <section class="araigné">
+        <div class="spider">
+            <div class="column">
+
+                <h1>LA TOILE</h1>
+                <P><b>Driiing driing petite antenne!</b></P>
+            </div>
+
+            <div class="column"> <img class="image" src="./Assets/Illustration/img5.png">
+            </div>
+    </section>
+    </div>
+    <div class="name">
+        <h2>LA PETITE ANTENNE</h2>
+        <p class="page"> Envie de laisser un mot à ton préférée.<br> Dépose ton message sur le web et on s'occupe de tout!</p>
+        <br>
+        <div class="nom row">
+
+            <div class="col-md-6">
+
+                <img src="./Assets/Illustration/img34.png" style="width:85%">
+            </div>
+            <div class="col-md-6 text-center">
+                <form>
+                    <input type="text" id="fname" name="fname" placeholder="   Nom">
+                    <br><br> <input type="text" id="fname" name="Prénom" placeholder="   Prénom">
+                    <br><br><input type="email" id="email" name="email" placeholder="   Adresse email">
+                    <br><br><input class="sms" type="text" id="fname" name="fname" placeholder="   Message">
+                    <br><br><button type="button" class="btn btn-outline-light">Envoyer</button>
+                    <br><br><br>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="jeux">
+        <h2>SAYNAX MARVEL</h2>
+        <div class="row lettre">
+            <div class="col-md-6">
+                Créé par les légendaires Stan Lee et Steve Ditko, le héros est apparu pour la
+                <br>première fois en 1962 dans les planches du comics The Amazing Fantasy
+                <br> #15. Avant son intégration dans le Marvel Cinematic Universe (MCU) et ses
+                <br>premières sorties au cinéma, le personnage jouissait déjà d'une forte
+                <br>popularité auprès des amateurs de super-héros. Cela s'explique grâce à un
+                <br>univers riche et un personnage complexe que l'on retrouve souvent
+                <br>confronté à des histoires tragiques. Mais le personnage de Spiderman n'est
+                <br>pas la seule explication de ce succés: la qualité des comics tient au moins
+                <br>autant à l'homme-araignée qu'à ses redoutables ennemis et ses iconiques
+                <br>alliés qui viennent enrichir cet univers singulier.
+                <br>
+                <br>Au cours de 60ans d'histoires, Spiderman a vécu des aventures incroyables,
+                <br>certaines sont même restées gravées au panthéon Marvel. Parmi celle-ci,
+                <br>on compte notamment la fameuse saga du clone ou celle du costume noir,
+                <br>mais aussi des crossovers dans lesquels le super-héros tient un rôle majeur
+                <br>comme dans Secret Wars ou plus récemment dans Civil War.Souvent, et en
+                <br>particulier dans ces grands récits, ses ennemis et ses alliés viennent enrichir
+                <br>son univers</p>
+                <b>Retrouve nous sur les réseaux!</b>
+
+            </div>
+
+            <div class="col-md-6">
+                <p>Toute le monde arrive à s'identifier à ce héro et c'est pourquoi nous avons
+                    <br>souhaité faire une collaboration!
+                    <br>
+                    <br>Cette collaboration est la première d'une grand série. L'univers de la pop
+                    <br>culture est une religion chez SAYNA. Nous aimons àla fois la richesse, mais
+                    <br>surtout toutes les valeurs qu'elles dégagent:
+                    <br>. Partage
+                    <br>. Liberté
+                    <br>. Entraide
+                    <br>. ...
+                    <br>
+                    <br>La pop culture fait désormais partie intégrante de notre histoire et nous
+                    <br>pouvons nous appuyer dessus pour éveiller nos esprits.
+                    <br>L'univers de SAYNA est tout aussi riche ! De nombreuses aventures
+                    <br>attendents ceux d'entre vous qui cherchent à se dépasser et explorer des
+                    <br>frontières inconnus
+                    <br>
+                    <br>L'aventure ne fait que commencer, alors crampone-toi!
+                </p>
+            </div>
+
+        </div>
+
+
+
+        <div class="row gx-0 text-center pt-3 pb-5 cadre">
+
+            <div class="col-md-6" style="margin-right: -10%;">
+                <a class="btn btn-outline-light mx-5" href="http://facebook.com">Facebook</a>
+                <a class=" btn btn-outline-light mx-5" href="http://instagram.com ">instagram</a>
+
+            </div>
+            <div class="col-md-6">
+                <a class=" btn btn-outline-light mx-5" href="http://youtube.com ">Youtube</a>
+                <a class=" btn btn-outline-light mx-5" href="http://marvel.com ">marvel.com</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-5 pb-3 text-white ">
+
+        <div class="text-center teta ">
+            <img src="./Assets/Logo/logo1.png " style="width: 3% ">
+            <img src="./Assets/Logo/logo2.png " style="width: 1% ">
+            <img src="./Assets/Logo/logo3.png " style="width: 13% ">
+        </div>
+        <div class="row fw-bold ">
+            <div class="col-md-1 foot "> Mobile app</div>
+            <div class="col-md-2 ">Politique de confidentialité</div>
+            <div class="col-md-1 ">Cookies</div>
+            <div class="col-md-1 pied ">Contact</div>
+            <div class="col-md-1 "> Blog</div>
+            <div class="col-md-1 "><select id="languages " name="languages ">
+                    <option>Langue</option>
+                    <option value="af ">Afrikaans</option>
+                    <option value="sq ">Albanian - shqip</option>
+                    <option value="am ">Amharic - አማርኛ</option>
+                    <option value="ar ">Arabic - العربية</option>
+                    <option value="an ">Aragonese - aragonés</option>
+                    <option value="hy ">Armenian - հայերեն</option>
+                    <option value="ast ">Asturian - asturianu</option>
+                    <option value="az ">Azerbaijani - azərbaycan dili</option>
+                    <option value="eu ">Basque - euskara</option>
+                    <option value="be ">Belarusian - беларуская</option>
+                    <option value="bn ">Bengali - বাংলা</option>
+                    <option value="bs ">Bosnian - bosanski</option>
+                    <option value="br ">Breton - brezhoneg</option>
+                    <option value="bg ">Bulgarian - български</option>
+                    <option value="ca ">Catalan - català</option>
+                    <option value="ckb ">Central Kurdish - کوردی (دەستنوسی عەرەبی)</option>
+                    <option value="zh ">Chinese - 中文</option>
+                    <option value="zh-HK ">Chinese (Hong Kong) - 中文（香港）</option>
+                    <option value="zh-CN ">Chinese (Simplified) - 中文（简体）</option>
+                    <option value="zh-TW ">Chinese (Traditional) - 中文（繁體）</option>
+                    <option value="co ">Corsican</option>
+                    <option value="hr ">Croatian - hrvatski</option>
+                    <option value="cs ">Czech - čeština</option>
+                    <option value="da ">Danish - dansk</option>
+                    <option value="nl ">Dutch - Nederlands</option>
+                    <option value="en ">English</option>
+                    <option value="en-AU ">English (Australia)</option>
+                    <option value="en-CA ">English (Canada)</option>
+                    <option value="en-IN ">English (India)</option>
+                    <option value="en-NZ ">English (New Zealand)</option>
+                    <option value="en-ZA ">English (South Africa)</option>
+                    <option value="en-GB ">English (United Kingdom)</option>
+                    <option value="en-US ">English (United States)</option>
+                    <option value="eo ">Esperanto - esperanto</option>
+                    <option value="et ">Estonian - eesti</option>
+                    <option value="fo ">Faroese - føroyskt</option>
+                    <option value="fil ">Filipino</option>
+                    <option value="fi ">Finnish - suomi</option>
+                    <option value="fr ">French - français</option>
+                    <option value="fr-CA ">French (Canada) - français (Canada)</option>
+                    <option value="fr-FR ">French (France) - français (France)</option>
+                    <option value="fr-CH ">French (Switzerland) - français (Suisse)</option>
+                    <option value="gl ">Galician - galego</option>
+                    <option value="ka ">Georgian - ქართული</option>
+                    <option value="de ">German - Deutsch</option>
+                    <option value="de-AT ">German (Austria) - Deutsch (Österreich)</option>
+                    <option value="de-DE ">German (Germany) - Deutsch (Deutschland)</option>
+                    <option value="de-LI ">German (Liechtenstein) - Deutsch (Liechtenstein)</option>
+                    <option value="de-CH ">German (Switzerland) - Deutsch (Schweiz)</option>
+                    <option value="el ">Greek - Ελληνικά</option>
+                    <option value="gn ">Guarani</option>
+                    <option value="gu ">Gujarati - ગુજરાતી</option>
+                    <option value="ha ">Hausa</option>
+                    <option value="haw ">Hawaiian - ʻŌlelo Hawaiʻi</option>
+                    <option value="he ">Hebrew - עברית</option>
+                    <option value="hi ">Hindi - हिन्दी</option>
+                    <option value="hu ">Hungarian - magyar</option>
+                    <option value="is ">Icelandic - íslenska</option>
+                    <option value="id ">Indonesian - Indonesia</option>
+                    <option value="ia ">Interlingua</option>
+                    <option value="ga ">Irish - Gaeilge</option>
+                    <option value="it ">Italian - italiano</option>
+                    <option value="it-IT ">Italian (Italy) - italiano (Italia)</option>
+                    <option value="it-CH ">Italian (Switzerland) - italiano (Svizzera)</option>
+                    <option value="ja ">Japanese - 日本語</option>
+                    <option value="kn ">Kannada - ಕನ್ನಡ</option>
+                    <option value="kk ">Kazakh - қазақ тілі</option>
+                    <option value="km ">Khmer - ខ្មែរ</option>
+                    <option value="ko ">Korean - 한국어</option>
+                    <option value="ku ">Kurdish - Kurdî</option>
+                    <option value="ky ">Kyrgyz - кыргызча</option>
+                    <option value="lo ">Lao - ລາວ</option>
+                    <option value="la ">Latin</option>
+                    <option value="lv ">Latvian - latviešu</option>
+                    <option value="ln ">Lingala - lingála</option>
+                    <option value="lt ">Lithuanian - lietuvių</option>
+                    <option value="mk ">Macedonian - македонски</option>
+                    <option value="ms ">Malay - Bahasa Melayu</option>
+                    <option value="ml ">Malayalam - മലയാളം</option>
+                    <option value="mt ">Maltese - Malti</option>
+                    <option value="mr ">Marathi - मराठी</option>
+                    <option value="mn ">Mongolian - монгол</option>
+                    <option value="ne ">Nepali - नेपाली</option>
+                    <option value="no ">Norwegian - norsk</option>
+                    <option value="nb ">Norwegian Bokmål - norsk bokmål</option>
+                    <option value="nn ">Norwegian Nynorsk - nynorsk</option>
+                    <option value="oc ">Occitan</option>
+                    <option value="or ">Oriya - ଓଡ଼ିଆ</option>
+                    <option value="om ">Oromo - Oromoo</option>
+                    <option value="ps ">Pashto - پښتو</option>
+                    <option value="fa ">Persian - فارسی</option>
+                    <option value="pl ">Polish - polski</option>
+                    <option value="pt ">Portuguese - português</option>
+                    <option value="pt-BR ">Portuguese (Brazil) - português (Brasil)</option>
+                    <option value="pt-PT ">Portuguese (Portugal) - português (Portugal)</option>
+                    <option value="pa ">Punjabi - ਪੰਜਾਬੀ</option>
+                    <option value="qu ">Quechua</option>
+                    <option value="ro ">Romanian - română</option>
+                    <option value="mo ">Romanian (Moldova) - română (Moldova)</option>
+                    <option value="rm ">Romansh - rumantsch</option>
+                    <option value="ru ">Russian - русский</option>
+                    <option value="gd ">Scottish Gaelic</option>
+                    <option value="sr ">Serbian - српски</option>
+                    <option value="sh ">Serbo-Croatian - Srpskohrvatski</option>
+                    <option value="sn ">Shona - chiShona</option>
+                    <option value="sd ">Sindhi</option>
+                    <option value="si ">Sinhala - සිංහල</option>
+                    <option value="sk ">Slovak - slovenčina</option>
+                    <option value="sl ">Slovenian - slovenščina</option>
+                    <option value="so ">Somali - Soomaali</option>
+                    <option value="st ">Southern Sotho</option>
+                    <option value="es ">Spanish - español</option>
+                    <option value="es-AR ">Spanish (Argentina) - español (Argentina)</option>
+                    <option value="es-419 ">Spanish (Latin America) - español (Latinoamérica)</option>
+                    <option value="es-MX ">Spanish (Mexico) - español (México)</option>
+                    <option value="es-ES ">Spanish (Spain) - español (España)</option>
+                    <option value="es-US ">Spanish (United States) - español (Estados Unidos)</option>
+                    <option value="su ">Sundanese</option>
+                    <option value="sw ">Swahili - Kiswahili</option>
+                    <option value="sv ">Swedish - svenska</option>
+                    <option value="tg ">Tajik - тоҷикӣ</option>
+                    <option value="ta ">Tamil - தமிழ்</option>
+                    <option value="tt ">Tatar</option>
+                    <option value="te ">Telugu - తెలుగు</option>
+                    <option value="th ">Thai - ไทย</option>
+                    <option value="ti ">Tigrinya - ትግርኛ</option>
+                    <option value="to ">Tongan - lea fakatonga</option>
+                    <option value="tr ">Turkish - Türkçe</option>
+                    <option value="tk ">Turkmen</option>
+                    <option value="tw ">Twi</option>
+                    <option value="uk ">Ukrainian - українська</option>
+                    <option value="ur ">Urdu - اردو</option>
+                    <option value="ug ">Uyghur</option>
+                    <option value="uz ">Uzbek - o‘zbek</option>
+                    <option value="vi ">Vietnamese - Tiếng Việt</option>
+                    <option value="wa ">Walloon - wa</option>
+                    <option value="cy ">Welsh - Cymraeg</option>
+                    <option value="fy ">Western Frisian</option>
+                    <option value="xh ">Xhosa</option>
+                    <option value="yi ">Yiddish</option>
+                    <option value="yo ">Yoruba - Èdè Yorùbá</option>
+                    <option value="zu ">Zulu - isiZulu</option>
+                </select>
+            </div>
+        </div>
+        <div class="text-center ">
+            <div class="alfa pt-5 ">
+                <img class="gama " src="./Assets/Logo/logof.png ">
+                <img class="gama " src="./Assets/Logo/logoi.png ">
+                <img class="gama " src="./Assets/Logo/logoy.png ">
+                <img class="gama " src="./Assets/Logo/logot.png ">
+            </div>
+            <div class="pt-4 ">
+                SaynaXMarvel,Inc.2022.We love our users!
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
